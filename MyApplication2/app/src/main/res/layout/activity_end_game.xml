@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#b900d0a2">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quit"
+        android:id="@+id/quit"
+        android:layout_marginBottom="71dp"
+        android:onClick="quitEndGame"
+        android:textSize="20dp"
+        android:background="#ffc2c0c4"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/AIScoreLabel"
+        android:layout_toEndOf="@+id/AIScoreLabel"
+        android:textColor="#000000"
+        android:maxWidth="120dp"
+        android:minWidth="120dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_game"
+        android:id="@+id/new_game"
+        android:onClick="restartGame"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:background="#ffc2c0c4"
+        android:layout_alignBaseline="@+id/quit"
+        android:layout_alignBottom="@+id/quit"
+        android:layout_alignRight="@+id/PlayerEndLabel"
+        android:layout_alignEnd="@+id/PlayerEndLabel"
+        android:minWidth="120dp"
+        android:maxWidth="120dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/PlayerEndScore"
+        android:id="@+id/PlayerEndLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp"
+        android:textSize="30dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AIScoreLabel"
+        android:text="@string/AIEndScore"
+        android:layout_below="@+id/PlayerEndLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp"
+        android:textSize="30dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlayerNumScore"
+        android:layout_alignBottom="@+id/PlayerEndLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp"
+        android:text="play score"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AINumScore"
+        android:id="@+id/AINumScore"
+        android:layout_alignBottom="@+id/AIScoreLabel"
+        android:layout_alignRight="@+id/PlayerNumScore"
+        android:layout_alignEnd="@+id/PlayerNumScore"
+        android:textSize="30dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_msg"
+        android:id="@+id/gameMessage"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000" />
+</RelativeLayout>

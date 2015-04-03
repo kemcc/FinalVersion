@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Flapjack</string>
+    <string name="title">Flapjack</string>
+    <string name="action_settings">Settings</string>
+    <string name="play_game">Play Game</string>
+    <string name="new_game">New Game</string>
+    <string name="rules">Rules</string>
+    <string name="quit">Quit</string>
+    <string name="title_activity_rules">RulesActivity</string>
+    <string name="title_activity_game_board">Game Board</string>
+    <string name="title_activity_choose_deck">Choose Deck</string>
+    <string name="chooseDeckText">Choose a deck to draw from.</string>
+    <string name="main_deck">Main Deck</string>
+    <string name="personal_deck">Personal Deck</string>
+    <string name="player_label">Player</string>
+    <string name="end_game">End Game</string>
+    <string name="hold">Hold</string>
+    <string name="hand">Hand</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="last_drawn_card">Opponent Last Drawn Card</string>
+    <string name="score">Score:</string>
+    <string name="clearHand">Clear Hand</string>
+    <string name="newPersonalDeck">New Personal Deck</string>
+    <string name="PlayerEndScore">Player Score:</string>
+    <string name="AIEndScore">Computer Score:</string>
+    <string name="AINumScore">ai score</string>
+    <string name="PlayerNumScore">player score</string>
+    <string name="game_msg">message</string>
+    <string name="no_card">0</string>
+    <string name="authors">By: Kiersten Mort, Karen McCowan, and Christopher Miller</string>
+</resources>

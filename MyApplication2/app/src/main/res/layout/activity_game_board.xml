@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="match_parent"
+    android:background="#b900d0a2">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deck_layout">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_label"
+        android:id="@+id/player_title"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:layout_above="@+id/score"
+        android:layout_toLeftOf="@+id/hold_button"
+        android:layout_toStartOf="@+id/hold_button"
+        android:layout_gravity="left|top" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_game"
+        android:id="@+id/end_game_button"
+        android:layout_above="@+id/score"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right|top"
+        android:onClick="toEndGame"
+        android:background="#ffc2c0c4" />
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:id="@+id/horizontalScrollView"
+        android:layout_gravity="center_horizontal|bottom" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/no_card"
+                android:id="@+id/buttonB"
+                android:onClick="buttonPressedB"
+                android:textSize="40dp"
+                android:background="#ffc2c0c4" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/no_card"
+                android:id="@+id/buttonA"
+                android:layout_gravity="left|center_vertical"
+                android:onClick="buttonPressedA"
+                android:textSize="40dp"
+                android:background="#ffc2c0c4" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/no_card"
+                android:id="@+id/buttonD"
+                android:layout_gravity="left|center_vertical"
+                android:onClick="buttonPressedD"
+                android:textSize="40dp"
+                android:background="#ffc2c0c4" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/no_card"
+                android:id="@+id/buttonF"
+                android:layout_gravity="left|center_vertical"
+                android:onClick="buttonPressedF"
+                android:textSize="40dp"
+                android:background="#ffc2c0c4" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/no_card"
+                android:id="@+id/buttonC"
+                android:layout_gravity="left|center_vertical"
+                android:onClick="buttonPressedC"
+                android:textSize="40dp"
+                android:background="#ffc2c0c4" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/no_card"
+                android:id="@+id/buttonE"
+                android:layout_gravity="left|center_vertical"
+                android:onClick="buttonPressedE"
+                android:textSize="40dp"
+                android:background="#ffc2c0c4" />
+        </LinearLayout> -->
+    </HorizontalScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hold"
+        android:id="@+id/hold_button"
+        android:onClick="hold"
+        android:layout_alignBottom="@+id/player_title"
+        android:layout_toLeftOf="@+id/score"
+        android:layout_toStartOf="@+id/score"
+        android:layout_gravity="center_horizontal|top"
+        android:background="#ffc2c0c4" />
+
+    <TextView
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:id="@+id/score"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="164dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/player_score"
+        android:layout_toStartOf="@+id/player_score" />
+
+    <TextView
+        android:layout_width="103dp"
+        android:layout_height="86dp"
+        android:text="0"
+        android:id="@+id/player_score"
+        android:textSize="60dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_alignBottom="@+id/score"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ff000000" />
+
+
+</FrameLayout>

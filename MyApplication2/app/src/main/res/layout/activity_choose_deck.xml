@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#b900d0a2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/chooseDeckText"
+        android:id="@+id/chooseDeck"
+        android:layout_marginTop="59dp"
+        android:layout_alignParentTop="true"
+        android:textColor="#000000"
+        android:textSize="35dp"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_deck"
+        android:id="@+id/main_deck_button"
+        android:onClick="drawMain"
+        android:background="#ffc2c0c4"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:minHeight="160dp"
+        android:minWidth="160dp"
+        android:layout_below="@+id/chooseDeck"
+        android:layout_centerHorizontal="true"
+        android:nestedScrollingEnabled="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/personal_deck"
+        android:id="@+id/personal_deck_button"
+        android:onClick="drawPersonal"
+        android:background="#ffc2c0c4"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:minWidth="150dp"
+        android:minHeight="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/main_deck_button"
+        android:layout_alignStart="@+id/main_deck_button"
+        android:layout_marginBottom="54dp"
+        android:maxWidth="160dp" /> */
+</RelativeLayout>
